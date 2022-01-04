@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (c) 2021 Petr Vorel <pvorel@suse.cz>
+
+name: "YAML validation"
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yamllint
+        run: sudo apt install -y --no-install-recommends yamllint
+
+      - name: Checkout kernel-qe
+        uses: actions/checkout@v2
+        with:
+          path: .
+
+      - name: Copy files, push
+        run: |
+          for i in *.yaml; do echo "=== $i ==="; yamllint $i; done
