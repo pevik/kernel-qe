@@ -1,3 +1,4 @@
+---
 syscalls:
     ustat01:
     - product: opensuse:Tumbleweed
