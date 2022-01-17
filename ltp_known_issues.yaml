@@ -4,7 +4,9 @@ syscalls:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
+      bugzilla: 1194208
     ustat02:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
+      bugzilla: 1194208
