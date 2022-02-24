@@ -8,3 +8,29 @@ syscalls:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
+
+commands:
+    df01_ext2_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    df01_ext3_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    df01_ext4_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    df01_xfs_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    df01_vfat_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    df01_exfat_sh:
+    - flavor: JeOS-for-kvm-and-xen
+      retval: ^1$
+      message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
