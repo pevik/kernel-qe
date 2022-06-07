@@ -34,3 +34,8 @@ commands:
     - flavor: JeOS-for-kvm-and-xen
       retval: ^1$
       message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+
+numa:
+    move_pages12:
+    - retval: ^1$
+      message: ENOMEM - Probably VM configuration problem or broken test. poo#52988
