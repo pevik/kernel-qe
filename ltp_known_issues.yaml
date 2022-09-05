@@ -12,8 +12,8 @@ syscalls:
 commands:
     df01_xfs_sh:
     - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: 5.19 mainline kernel might introduced bug. bsc#1202362
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
     df01_ext2_sh:
     - flavor: JeOS-for-kvm-and-xen
       retval: ^1$
