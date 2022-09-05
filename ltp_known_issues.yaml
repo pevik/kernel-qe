@@ -1,5 +1,311 @@
 ---
+controllers:
+    io_control01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    memcontrol02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    memcontrol03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    memcontrol04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+
+cve:
+    cve-2018-13405:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+
+fs:
+    fs_fill:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+
 syscalls:
+    chdir01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    close_range01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    copy_file_range01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    creat09:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fallocate04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fallocate05:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fallocate06:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify13:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify14:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify15:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify16:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify20:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fanotify21:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fdatasync03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fgetxattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fremovexattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fremovexattr02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsconfig01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsetxattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsmount01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsmount02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsopen01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fspick01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fspick02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsync01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    fsync04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    getxattr04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    lremovexattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    mkdir09:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    mount_setattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    move_mount01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    move_mount02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    msync04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    open_tree01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    open_tree02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    preadv03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    preadv03_64:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    preadv203:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    preadv203_64:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    pwritev03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    pwritev03_64:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    quotactl02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    quotactl03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    quotactl05:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    quotactl07:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename05:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename06:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename07:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename08:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename10:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename12:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    rename13:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    set_mempolicy03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    set_mempolicy04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    setxattr01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    statx04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    statx08:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    sync01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    sync_file_range02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    syncfs01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    utime01:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    utime02:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    utime03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    utime04:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    utime05:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+    writev03:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
     ustat01:
     - product: opensuse:(Tumbleweed|15\.4)
       retval: ^1$
@@ -34,6 +340,10 @@ commands:
     - flavor: JeOS-for-kvm-and-xen
       retval: ^1$
       message: JeOS - proc-sys-fs-binfmt_misc.mount failed. bsc#1196373
+    mkfs01_xfs_sh:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
 
 numa:
     move_pages12:
