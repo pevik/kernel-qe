@@ -319,7 +319,7 @@ commands:
     df01_sh:
     - product: opensuse:Tumbleweed
       retval: ^1$
-      message: Tests using XFS fail since 5.19 due mkfs.xfs requiring 300 MB (LTP bug, fix is WIP)
+      message: df -k -P and df -T -P fail on XFS since 5.19 (LTP bug, fix is WIP, https://lore.kernel.org/linux-xfs/YvZTpQFinpkB06p9@pevik/
     mkfs01_xfs_sh:
     - product: opensuse:Tumbleweed
       retval: ^1$
