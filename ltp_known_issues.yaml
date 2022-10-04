@@ -20,587 +20,587 @@ net.features:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     mpls03.sh:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     mpls04.sh:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 net.ipv6:
     nft6:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 net_stress.broken_ip:
     broken_ip4-version:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-ihl:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-fragment:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-plen:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-protcol:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-checksum:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip4-dstaddr:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip6-dstaddr:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip6-nexthdr:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip6-plen:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     broken_ip6-version:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 net_stress.ipsec_icmp:
     icmp4-uni-basic01:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic02:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic03:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic04:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic05:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic06:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic07:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic08:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic09:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic10:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic11:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic12:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic13:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic14:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic15:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic16:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic17:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic18:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic19:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic20:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic21:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic22:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic23:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic24:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic25:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-basic26:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic01:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic02:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic03:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic04:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic05:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic06:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic07:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic08:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic09:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic10:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic11:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic12:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic13:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic14:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic15:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic16:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic17:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic18:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic19:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic20:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic21:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic22:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic23:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic24:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic25:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-basic26:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti01:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti02:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti03:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti04:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti05:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti06:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti07:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti08:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti09:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti10:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti11:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti12:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti13:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti14:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti15:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti16:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp4-uni-vti17:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti01:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti02:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti03:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti04:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti05:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti06:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti07:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti08:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti09:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti10:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti11:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti12:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti13:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti14:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti15:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti16:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     icmp6-uni-vti17:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 net_stress.interface:
     if4-updown_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if4-addr-adddel_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if4-addr-addlarge_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if4-route-adddel_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if4-route-addlarge_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if4-mtu-change_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-updown_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-addr-adddel_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-addr-addlarge_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-route-adddel_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-route-addlarge_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     if6-mtu-change_ip:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 net.tcp_cmds:
     ping01:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
     ping02:
     - product: sle:(15-SP[4-5])$
       arch: aarch64$
       retval: ^1$
-      message: ping on sporadically segfaults. https://github.com/iputils/iputils/issues/423
+      message: ping on sporadically segfaults. bsc#1203957
 
 numa:
     move_pages12:
