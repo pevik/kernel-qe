@@ -15,6 +15,16 @@ commands:
       retval: ^1$
       message: df -k -P and df -T -P fail on XFS since 5.19 (LTP bug, fix is WIP, https://lore.kernel.org/linux-xfs/YvZTpQFinpkB06p9@pevik/
 
+lvm.local:
+    xfs_gf16:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
+    xfs_gf17:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
+
 net.features:
     mpls02.sh:
     - product: sle:(15-SP[4-5])$
