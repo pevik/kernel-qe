@@ -49,6 +49,44 @@ net.ipv6:
       retval: ^1$
       message: ping on sporadically segfaults. bsc#1203957
 
+net.nfs:
+    nfs4_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs41_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs42_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs4_ipv6_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs41_ipv6_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs42_ipv6_02:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs4_05:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs41_05:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfs42_05:
+    - product: opensuse:Tumbleweed
+      retval: ^undefined$
+      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+
 net_stress.broken_ip:
     broken_ip4-version:
     - product: sle:(15-SP[4-5])$
