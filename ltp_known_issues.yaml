@@ -14,6 +14,12 @@ commands:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: df -k -P and df -T -P fail on XFS since 5.19 (LTP bug, fix is WIP, https://lore.kernel.org/linux-xfs/YvZTpQFinpkB06p9@pevik/
+    insmod01_sh:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      bugzilla: 1208920
+      retval: ^1$
+      message: JeOS has since kernel 6.2.1 lockdown enabled (run on UEFI machines booted in Secure Boot mode). bsc#1208920 bsc#1198101
 
 lvm.local:
     xfs_gf16:
