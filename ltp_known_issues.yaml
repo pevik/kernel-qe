@@ -13,7 +13,7 @@ commands:
     df01_sh:
     - product: opensuse:Tumbleweed
       retval: ^1$
-      message: df -k -P and df -T -P fail on XFS since 5.19 (LTP bug, fix is WIP, https://lore.kernel.org/linux-xfs/YvZTpQFinpkB06p9@pevik/
+      message: df -k -P and df -T -P fail on XFS since 5.19 (LTP bug, https://patchwork.ozlabs.org/project/ltp/list/?series=345076&state=*, https://lore.kernel.org/linux-xfs/YvZTpQFinpkB06p9@pevik/)
     insmod01_sh:
     - product: opensuse:Tumbleweed
       flavor: JeOS-for-kvm-and-xen$
