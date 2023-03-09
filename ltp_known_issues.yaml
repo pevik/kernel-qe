@@ -17,9 +17,8 @@ commands:
     insmod01_sh:
     - product: opensuse:Tumbleweed
       flavor: JeOS-for-kvm-and-xen$
-      bugzilla: 1208920
       retval: ^1$
-      message: JeOS has since kernel 6.2.1 lockdown enabled (run on UEFI machines booted in Secure Boot mode). bsc#1208920 bsc#1198101
+      message: JeOS has since kernel 6.2.1 lockdown enabled, LTP packaging needs to be updated. poo#125678 bsc#1208920 bsc#1198101
 
 lvm.local:
     xfs_gf16:
