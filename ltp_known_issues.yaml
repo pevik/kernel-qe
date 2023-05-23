@@ -91,6 +91,22 @@ net.nfs:
     - product: opensuse:Tumbleweed
       retval: ^undefined$
       message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
+    nfslock3_01:
+    - product: opensuse:(Tumbleweed|15\.[4-5])
+      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
+      retval: ^1$
+    nfslock3t_01:
+    - product: opensuse:(Tumbleweed|15\.[4-5])
+      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
+      retval: ^1$
+    nfslock3_ipv6_01:
+    - product: opensuse:(Tumbleweed|15\.[4-5])
+      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
+      retval: ^1$
+    nfslock3t_ipv6_01:
+    - product: opensuse:(Tumbleweed|15\.[4-5])
+      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
+      retval: ^1$
 
 net_stress.broken_ip:
     broken_ip4-version:
