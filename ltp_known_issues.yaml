@@ -1,5 +1,9 @@
 ---
 syscalls:
+    setsockopt08:
+    - product: opensuse:Tumbleweed|alp
+      retval: ^1$
+      message: Reported. bsc#1212839
     ustat01:
     - product: opensuse:(Tumbleweed|15\.4)|alp
       retval: ^1$
@@ -19,6 +23,12 @@ commands:
       flavor: JeOS-for-kvm-and-xen$
       retval: ^1$
       message: JeOS has since kernel 6.2.1 lockdown enabled, LTP packaging needs to be updated. poo#125678 bsc#1208920 bsc#1198101
+
+cve:
+    cve-2016-4997:
+    - product: opensuse:Tumbleweed|alp
+      retval: ^1$
+      message: Reported. bsc#1212839
 
 lvm.local:
     xfs_gf16:
