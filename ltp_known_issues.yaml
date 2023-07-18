@@ -1,5 +1,35 @@
 ---
 syscalls:
+    delete_module01:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^2$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
+    delete_module03:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^2$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
+    finit_module01:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^1$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
+    finit_module02:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^3$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
+    init_module01:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^1$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
+    init_module02:
+    - product: opensuse:Tumbleweed
+      flavor: JeOS-for-kvm-and-xen$
+      retval: ^3$
+      message: Wrong lockdown detection in JeOS. Reported. poo#132686
     fanotify14:
     - product: opensuse:Tumbleweed|alp
       retval: ^1$
