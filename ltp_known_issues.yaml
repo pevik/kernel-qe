@@ -37,7 +37,7 @@ syscalls:
     sched_rr_get_interval01:
     - product: opensuse:Tumbleweed|alp
       retval: ^1$
-      message: Test bug on non-default CONFIG_HZ value. Reported. poo#132959
+      message: Mainline kernel bug on non-default CONFIG_HZ value. Reported. poo#132959
     setsockopt08:
     - product: opensuse:Tumbleweed|alp
       retval: ^1$
