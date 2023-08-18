@@ -45,42 +45,6 @@ lvm.local:
       message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
 
 net.nfs:
-    nfs4_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs41_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs42_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs4_ipv6_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs41_ipv6_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs42_ipv6_02:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs4_05:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs41_05:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
-    nfs42_05:
-    - product: opensuse:Tumbleweed
-      retval: ^undefined$
-      message: NFSD bug in mainline kernel since 6.0, fixed in maintainer tree. https://lore.kernel.org/linux-nfs/20221031154921.500620-1-jlayton@kernel.org/
     nfslock3_01:
     - product: opensuse:(Tumbleweed|15\.[4-5])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
