@@ -33,6 +33,10 @@ cve:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: Reported. bsc#1212839
+    cve-2021-22555:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Reported. bsc#1212839
 
 lvm.local:
     xfs_gf16:
