@@ -1,23 +1,23 @@
 ---
 syscalls:
     fanotify14:
-    - product: opensuse:Tumbleweed|opensuse:15.4|alp
+    - product: opensuse:Tumbleweed|opensuse:15.4
       retval: ^1$
       message: Waiting for stable kernel to get backport of 69562eb0bd3e ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
     sched_rr_get_interval01:
-    - product: opensuse:Tumbleweed|alp
+    - product: opensuse:Tumbleweed
       retval: ^1$
       message: Mainline kernel bug on non-default CONFIG_HZ value. Reported. bsc#1196438 poo#132959
     setsockopt08:
-    - product: opensuse:Tumbleweed|alp
+    - product: opensuse:Tumbleweed
       retval: ^1$
       message: Reported. bsc#1212839
     ustat01:
-    - product: opensuse:(Tumbleweed|15\.4)|alp
+    - product: opensuse:(Tumbleweed|15\.4)
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
     ustat02:
-    - product: opensuse:(Tumbleweed|15\.4)|alp
+    - product: opensuse:(Tumbleweed|15\.4)
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
 
@@ -30,7 +30,7 @@ commands:
 
 cve:
     cve-2016-4997:
-    - product: opensuse:Tumbleweed|alp
+    - product: opensuse:Tumbleweed
       retval: ^1$
       message: Reported. bsc#1212839
 
