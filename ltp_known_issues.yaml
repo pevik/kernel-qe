@@ -29,10 +29,6 @@ commands:
       message: JeOS has since kernel 6.2.1 lockdown enabled, LTP packaging needs to be updated. poo#125678 bsc#1208920 bsc#1198101
 
 cve:
-    cve-2016-4997:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Reported. bsc#1212839
     cve-2021-22555:
     - product: opensuse:Tumbleweed
       retval: ^1$
