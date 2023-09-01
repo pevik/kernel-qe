@@ -26,11 +26,11 @@ syscalls:
       retval: ^1$
       message: Reported. bsc#1212839
     ustat01:
-    - product: opensuse:(Tumbleweed|15\.4)
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
     ustat02:
-    - product: opensuse:(Tumbleweed|15\.4)
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
 
@@ -60,19 +60,19 @@ lvm.local:
 
 net.nfs:
     nfslock3_01:
-    - product: opensuse:(Tumbleweed|15\.[4-5])
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
     nfslock3t_01:
-    - product: opensuse:(Tumbleweed|15\.[4-5])
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
     nfslock3_ipv6_01:
-    - product: opensuse:(Tumbleweed|15\.[4-5])
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
     nfslock3t_ipv6_01:
-    - product: opensuse:(Tumbleweed|15\.[4-5])
+    - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
 
