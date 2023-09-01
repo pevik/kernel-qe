@@ -1,5 +1,10 @@
 ---
 syscalls:
+    clone302:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      bugzilla: 3541571
+      retval: ^1$
+      message: Test bug. Reported to upstream LTP. bsc#3541571
     fanotify14:
     - product: opensuse:Tumbleweed|opensuse:15.4
       retval: ^1$
