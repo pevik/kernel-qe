@@ -1,5 +1,10 @@
 ---
 syscalls:
+    process_madvise01:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      bugzilla: 1214876
+      retval: ^1$
+      message: Reported to upstream LTP. bsc#1214876
     clone302:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       bugzilla: 3541571
