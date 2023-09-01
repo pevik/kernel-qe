@@ -1,10 +1,5 @@
 ---
 syscalls:
-    process_madvise01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      bugzilla: 1214876
-      retval: ^1$
-      message: Reported to upstream LTP. bsc#1214876
     clone302:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       bugzilla: 3541571
@@ -15,6 +10,11 @@ syscalls:
       retval: ^1$
       message: Waiting for stable kernel to get backport of 69562eb0bd3e ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
       bugzilla: 1213486
+    process_madvise01:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      bugzilla: 1214876
+      retval: ^1$
+      message: Reported to upstream LTP. bsc#1214876
     sched_rr_get_interval01:
     - product: opensuse:Tumbleweed
       retval: ^1$
