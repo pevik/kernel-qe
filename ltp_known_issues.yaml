@@ -22,9 +22,9 @@ syscalls:
       bugzilla: 1196438
     setsockopt08:
     - product: opensuse:Tumbleweed
-      bugzilla: 1212839
+      bugzilla: 1217990
       retval: ^1$
-      message: Reported. bsc#1212839
+      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
     ustat01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
@@ -44,9 +44,9 @@ commands:
 cve:
     cve-2021-22555:
     - product: opensuse:Tumbleweed
-      bugzilla: 1212839
+      bugzilla: 1217990
       retval: ^1$
-      message: Reported. bsc#1212839
+      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
 
 lvm.local:
     xfs_gf16:
