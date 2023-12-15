@@ -1,39 +1,4 @@
 ---
-syscalls:
-    clone302:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      bugzilla: 3541571
-      retval: ^1$
-      message: Test bug. Reported to upstream LTP. bsc#3541571
-    fanotify14:
-    - product: opensuse:15\.[45]
-      retval: ^1$
-      message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
-      bugzilla: 1213486
-    process_madvise01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      bugzilla: 1214876
-      retval: ^1$
-      message: Reported to upstream LTP. bsc#1214876
-    sched_rr_get_interval01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Mainline kernel bug on non-default CONFIG_HZ value. Reported. bsc#1196438 poo#132959
-      bugzilla: 1196438
-    setsockopt08:
-    - product: opensuse:Tumbleweed
-      bugzilla: 1217990
-      retval: ^1$
-      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
-    ustat01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      retval: ^1$
-      message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
-    ustat02:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      retval: ^1$
-      message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
-
 commands:
     insmod01_sh:
     - product: opensuse:Tumbleweed
@@ -80,3 +45,38 @@ numa:
     move_pages12:
     - retval: ^1$
       message: ENOMEM - Probably VM configuration problem or broken test. poo#52988
+
+syscalls:
+    clone302:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      bugzilla: 3541571
+      retval: ^1$
+      message: Test bug. Reported to upstream LTP. bsc#3541571
+    fanotify14:
+    - product: opensuse:15\.[45]
+      retval: ^1$
+      message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
+      bugzilla: 1213486
+    process_madvise01:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      bugzilla: 1214876
+      retval: ^1$
+      message: Reported to upstream LTP. bsc#1214876
+    sched_rr_get_interval01:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Mainline kernel bug on non-default CONFIG_HZ value. Reported. bsc#1196438 poo#132959
+      bugzilla: 1196438
+    setsockopt08:
+    - product: opensuse:Tumbleweed
+      bugzilla: 1217990
+      retval: ^1$
+      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
+    ustat01:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      retval: ^1$
+      message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
+    ustat02:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      retval: ^1$
+      message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
