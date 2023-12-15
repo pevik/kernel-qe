@@ -23,6 +23,28 @@ lvm.local:
       retval: ^1$
       message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
 
+net.features:
+    wireguard01:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: modprobe wireguard broken on ppc64le. bsc#1218114
+      retval: ^1$
+    wireguard01_ipv6:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: modprobe wireguard broken on ppc64le. bsc#1218114
+      retval: ^1$
+    wireguard02:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: modprobe wireguard broken on ppc64le. bsc#1218114
+      retval: ^1$
+    wireguard02_ipv6:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: modprobe wireguard broken on ppc64le. bsc#1218114
+      retval: ^1$
+
 net.nfs:
     nfslock3_01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
