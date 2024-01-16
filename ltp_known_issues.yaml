@@ -45,6 +45,12 @@ net.features:
       message: modprobe wireguard broken on ppc64le. bsc#1218114
       retval: ^1$
 
+kernel_misc:
+    zram01:
+    - product: opensuse:Tumbleweed
+      message: LTP shell tests API regression (bcachefs). Patch sent https://lore.kernel.org/ltp/24ca6ef55b11b485a47515496de01e2c@suse.de/
+      retval: ^2$
+
 net.ipv6:
     nft6:
     - product: opensuse:Tumbleweed
