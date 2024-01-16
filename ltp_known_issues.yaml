@@ -45,6 +45,16 @@ net.features:
       message: modprobe wireguard broken on ppc64le. bsc#1218114
       retval: ^1$
 
+net.ipv6:
+    nft6:
+    - product: opensuse:Tumbleweed
+      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
+      retval: ^1$
+    ip6tables:
+    - product: opensuse:Tumbleweed
+      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
+      retval: ^1$
+
 net.nfs:
     nfslock3_01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
@@ -61,6 +71,16 @@ net.nfs:
     nfslock3t_ipv6_01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
+      retval: ^1$
+
+net.tcp_cmds:
+    nft:
+    - product: opensuse:Tumbleweed
+      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
+      retval: ^1$
+    iptables:
+    - product: opensuse:Tumbleweed
+      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
       retval: ^1$
 
 numa:
