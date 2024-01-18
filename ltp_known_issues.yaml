@@ -32,22 +32,22 @@ net.features:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^1$
+      retval: ^2$
     wireguard01_ipv6:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^1$
+      retval: ^2$
     wireguard02:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^1$
+      retval: ^2$
     wireguard02_ipv6:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^1$
+      retval: ^2$
 
 kernel_misc:
     zram01:
