@@ -99,7 +99,7 @@ numa:
       message: ENOMEM - Probably VM configuration problem or broken test. poo#52988
 
 sched:
-    clone302:
+    proc_sched_rt01:
     - product: opensuse:Tumbleweed
       retval: ^1$
       message: Missing kernel backport 079be8fc6309 in kernel 6.6 (should be fixed in kernel >= 6.7)
