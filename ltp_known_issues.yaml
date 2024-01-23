@@ -27,6 +27,12 @@ lvm.local:
       retval: ^1$
       message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
 
+mm:
+    swapping01:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
+
 net.features:
     wireguard01:
     - product: opensuse:Tumbleweed
