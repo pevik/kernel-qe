@@ -114,11 +114,6 @@ syscalls:
       bugzilla: 1214876
       retval: ^1$
       message: Reported to upstream LTP. bsc#1214876
-    sched_rr_get_interval01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Mainline kernel bug on non-default CONFIG_HZ value. Reported. bsc#1196438 poo#132959
-      bugzilla: 1196438
     setsockopt08:
     - product: opensuse:Tumbleweed
       bugzilla: 1217990
