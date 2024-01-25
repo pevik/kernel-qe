@@ -383,11 +383,6 @@ net.tcp_cmds:
       message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
       retval: ^1$
 
-numa:
-    move_pages12:
-    - retval: ^1$
-      message: ENOMEM - Probably VM configuration problem or broken test. poo#52988
-
 sched:
     proc_sched_rt01:
     - product: opensuse:Tumbleweed
