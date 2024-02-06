@@ -391,9 +391,8 @@ syscalls:
       message: Test bug. Reported to upstream LTP. bsc#3541571
     fallocate06:
     - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      retval: ^2$
-      message: Failure on ppc64le. Bug in Btrfs, reported. bsc#1217101
+      retval: ^6$
+      message: Upstream bug in the test. Reported. https://lore.kernel.org/ltp/20240201101603.GA78772@pevik/
     fanotify14:
     - product: opensuse:15\.[45]
       retval: ^1$
