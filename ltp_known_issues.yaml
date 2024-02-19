@@ -72,19 +72,11 @@ net.ipv6:
       retval: ^1$
 
 net.nfs:
-    nfslock3_01:
+    nfslock01_v30_ip4t:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
-    nfslock3t_01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
-      retval: ^1$
-    nfslock3_ipv6_01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
-      retval: ^1$
-    nfslock3t_ipv6_01:
+    nfslock01_v30_ip6t:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
