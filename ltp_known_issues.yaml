@@ -84,6 +84,10 @@ net.nfs:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: All kernel versions are affected by O_TRUNC bug on NFSv3. Reported. bsc#1219847
       retval: ^1$
+    nfs09_v30_ip6t:
+    - product: opensuse:(Tumbleweed|15\.[4-6])
+      message: All kernel versions are affected by O_TRUNC bug on NFSv3. Reported. bsc#1219847
+      retval: ^1$
 
 net.tcp_cmds:
     nft:
