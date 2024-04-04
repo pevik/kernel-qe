@@ -33,28 +33,6 @@ mm:
       retval: ^1$
       message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
 
-net.features:
-    wireguard01:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^2$
-    wireguard01_ipv6:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^2$
-    wireguard02:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^2$
-    wireguard02_ipv6:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      message: modprobe wireguard broken on ppc64le. bsc#1218114
-      retval: ^2$
-
 kernel_misc:
     zram01:
     - product: opensuse:Tumbleweed
