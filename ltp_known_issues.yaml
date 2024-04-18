@@ -17,6 +17,12 @@ cve:
       retval: ^1$
       message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
 
+fs:
+    proc01:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Failure in kernel 6.8 on /proc/fs/nfsd/nfsv4recoverydir. Fix will be released in kernel 6.10. https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=639bd39787b82ef9d53d76961fce1db0dae0bd22
+
 lvm.local:
     xfs_gf16:
     - product: opensuse:Tumbleweed
