@@ -118,6 +118,10 @@ syscalls:
       bugzilla: 1217990
       retval: ^1$
       message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
+    statx04:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Bcachefs does not support STATX_ATTR_COMPRESSED in mainline kernel. https://lore.kernel.org/ltp/20231207194011.273027-4-pvorel@suse.cz/
     ustat01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
