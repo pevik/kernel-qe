@@ -118,6 +118,10 @@ syscalls:
       bugzilla: 1217990
       retval: ^1$
       message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
+    statvfs01:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Bcachefs fails with ENAMETOOLONG in mainline kernel. https://lore.kernel.org/ltp/20231116135546.2599273-1-pvorel@suse.cz/
     statx04:
     - product: opensuse:Tumbleweed
       retval: ^1$
