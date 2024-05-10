@@ -1,0 +1,57 @@
+---
+
+pynfs:
+    CID1:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID1b:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID2a:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID3:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID4a:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID4b:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID4c:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID4d:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
+    CID5:
+    - product: opensuse:Tumbleweed
+      message: mainline bug on courtesy clients when testing with low ram. bsc#1217488
+      error: "nfs4lib.BadCompoundRes: operation OP_SETCLIENTID should return NFS4_OK, instead got NFS4ERR_DELAY"
+      nfs_version: 4.0
+      bugzilla: 1217488
