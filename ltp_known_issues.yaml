@@ -108,6 +108,12 @@ syscalls:
       arch: ppc64le$
       retval: ^undefined$
       message: Reported. bsc#1217145
+    msync04:
+    - product: opensuse:Tumbleweed
+      arch: x86_64$
+      retval: ^1$
+      message: Test does not set dirty bit on NTFS on x86_64 on debug_pagealloc=on. Reported similar issue for SLE15-SP6. bsc#1224201
+      bugzilla: 1224201
     process_madvise01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       bugzilla: 1214876
