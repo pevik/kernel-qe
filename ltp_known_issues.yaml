@@ -72,6 +72,38 @@ net.nfs:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: All kernel versions are affected by O_TRUNC bug on NFSv3. Reported. bsc#1219847
       retval: ^1$
+    nfsstat01_v30_ip4t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v40_ip4t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v41_ip4t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v42_ip4t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v30_ip6t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v40_ip6t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v41_ip6t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
+    nfsstat01_v42_ip6t:
+    - product: opensuse:Tumbleweed
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      retval: ^1$
 
 net.tcp_cmds:
     nft:
