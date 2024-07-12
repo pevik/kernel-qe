@@ -74,35 +74,35 @@ net.nfs:
       retval: ^1$
     nfsstat01_v30_ip4t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v40_ip4t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v41_ip4t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v42_ip4t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v30_ip6t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v40_ip6t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v41_ip6t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
     nfsstat01_v42_ip6t:
     - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/, patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/.
+      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
       retval: ^1$
 
 net.tcp_cmds:
