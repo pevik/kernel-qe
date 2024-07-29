@@ -146,6 +146,10 @@ syscalls:
       arch: ppc64le$
       retval: ^undefined$
       message: Reported. bsc#1217145
+    ioctl_ficlone02:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Test fails on bcachefs. Reported. https://lore.kernel.org/linux-bcachefs/20240729115335.GA1251624@pevik/
     msync04:
     - product: opensuse:Tumbleweed
       arch: x86_64$
