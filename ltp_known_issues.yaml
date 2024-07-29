@@ -118,7 +118,7 @@ net.tcp_cmds:
 sched:
     sched_football:
     - product: opensuse:Tumbleweed
-      message: command not found. LTP upstream bug, requires workaround to modify $PATH. Reported. https://lore.kernel.org/ltp/20240729073226.GA1223191@pevik/.
+      message: command not found. LTP upstream bug, requires workaround to modify $PATH. Upstream workaround. https://lore.kernel.org/ltp/20240729113927.1250531-1-pvorel@suse.cz/
       retval: ^127$
 
 syscalls:
