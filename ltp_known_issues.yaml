@@ -115,6 +115,12 @@ net.tcp_cmds:
       message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
       retval: ^1$
 
+sched:
+    sched_football:
+    - product: opensuse:Tumbleweed
+      message: command not found. LTP upstream bug, requires workaround to modify $PATH. Reported. https://lore.kernel.org/ltp/20240729073226.GA1223191@pevik/.
+      retval: ^127$
+
 syscalls:
     clone302:
     - product: opensuse:(Tumbleweed|15\.[4-6])
