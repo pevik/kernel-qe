@@ -135,7 +135,6 @@ syscalls:
     - product: opensuse:15\.[45]
       retval: ^1$
       message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
-      bugzilla: 1213486
     ioctl01:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
