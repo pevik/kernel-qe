@@ -1,27 +1,15 @@
 ---
-commands:
-    df01_sh:
-    - product: opensuse:Tumbleweed
-      message: LTP shell tests API regression (bcachefs). Patch sent https://lore.kernel.org/ltp/20240118090004.2748107-1-pvorel@suse.cz/
-      retval: ^2$
-    insmod01_sh:
-    - product: opensuse:Tumbleweed
-      flavor: JeOS-for-kvm-and-xen$
-      retval: ^1$
-      message: JeOS has since kernel 6.2.1 lockdown enabled, LTP packaging needs to be updated. poo#125678 bsc#1208920 bsc#1198101
-
 cve:
-    cve-2021-22555:
+    cve-2022-0185:
     - product: opensuse:Tumbleweed
-      bugzilla: 1217990
       retval: ^1$
-      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
+      bugzilla: 1230065
+      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
 
-fs:
-    proc01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Failure in kernel 6.8 on /proc/fs/nfsd/nfsv4recoverydir. Fix will be released in kernel 6.10. https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=639bd39787b82ef9d53d76961fce1db0dae0bd22
+kernel_misc:
+    tpci:
+    - skip: 1
+      message: Bug in test. Work in progress. poo#94786
 
 lvm.local:
     xfs_gf16:
@@ -39,22 +27,6 @@ mm:
       retval: ^1$
       message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
 
-kernel_misc:
-    zram01:
-    - product: opensuse:Tumbleweed
-      message: LTP shell tests API regression (bcachefs). Patch sent https://lore.kernel.org/ltp/20240118090004.2748107-1-pvorel@suse.cz/
-      retval: ^2$
-
-net.ipv6:
-    nft6:
-    - product: opensuse:Tumbleweed
-      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
-      retval: ^1$
-    ip6tables:
-    - product: opensuse:Tumbleweed
-      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
-      retval: ^1$
-
 net.nfs:
     nfslock01_v30_ip4t:
     - product: opensuse:(Tumbleweed|15\.[4-6])
@@ -64,107 +36,75 @@ net.nfs:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
-    nfs09_v30_ip4t:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      message: All kernel versions are affected by O_TRUNC bug on NFSv3. Reported. bsc#1219847
-      retval: ^1$
-    nfs09_v30_ip6t:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      message: All kernel versions are affected by O_TRUNC bug on NFSv3. Reported. bsc#1219847
-      retval: ^1$
-    nfsstat01_v30_ip4t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v40_ip4t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v41_ip4t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v42_ip4t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v30_ip6t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v40_ip6t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v41_ip6t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
-    nfsstat01_v42_ip6t:
-    - product: opensuse:Tumbleweed
-      message: Kernel 6.9 moved client RPC calls statistics to namespace. Reported https://lore.kernel.org/ltp/4cb938c107a6400baa723098d15dd8a3355d24e8.1708026931.git.josef@toxicpanda.com/. Patch fixing test sent https://patchwork.ozlabs.org/project/ltp/patch/20240620111129.594449-1-pvorel@suse.cz/. Following discussion https://lore.kernel.org/ltp/d4b235df-4ee5-4824-9d48-e3b3c1f1f4d1@oracle.com/.
-      retval: ^1$
 
-net.tcp_cmds:
-    nft:
-    - product: opensuse:Tumbleweed
-      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
-      retval: ^1$
-    iptables:
-    - product: opensuse:Tumbleweed
-      message: ping regression on -i 0. https://github.com/iputils/iputils/pull/519
-      retval: ^1$
-
-sched:
-    sched_football:
-    - product: opensuse:Tumbleweed
-      message: command not found. LTP upstream bug, requires workaround to modify $PATH. Upstream workaround. https://lore.kernel.org/ltp/20240729113927.1250531-1-pvorel@suse.cz/
-      retval: ^127$
+net.rpc_tests:
+    rpc_clnt_broadcast:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_svc_destroy:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_svcfd_create:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_xprt_register:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_xprt_unregister:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
 
 syscalls:
-    clone302:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      bugzilla: 3541571
-      retval: ^1$
-      message: Test bug. Reported to upstream LTP. bsc#3541571
-    fallocate06:
-    - product: opensuse:Tumbleweed
-      retval: ^6$
-      message: Upstream bug in the test. Reported. https://lore.kernel.org/ltp/20240201101603.GA78772@pevik/
     fanotify14:
     - product: opensuse:15\.[45]
       retval: ^1$
       message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
+    fsconfig03:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      bugzilla: 1230065
+      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
     ioctl01:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       retval: ^2$
       message: ioctl(TCGETS) with invalid address triggers process SEGFAULT. Glibc syscall wrapper issue. WONTFIX. bsc#1217134
-    ioctl02:
+    recvmmsg01:
     - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      retval: ^undefined$
-      message: Reported. bsc#1217145
-    ioctl_ficlone02:
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
     - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Test fails on bcachefs. Reported. https://lore.kernel.org/linux-bcachefs/20240729115335.GA1251624@pevik/
-    msync04:
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    mq_timedreceive01:
     - product: opensuse:Tumbleweed
-      arch: x86_64$
-      retval: ^1$
-      message: Test does not set dirty bit on NTFS on x86_64 on debug_pagealloc=on. Reported similar issue for SLE15-SP6. bsc#1224201
-      bugzilla: 1224201
-    process_madvise01:
-    - product: opensuse:(Tumbleweed|15\.[4-6])
-      bugzilla: 1214876
-      retval: ^1$
-      message: Reported to upstream LTP. bsc#1214876
-    setsockopt08:
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
     - product: opensuse:Tumbleweed
-      bugzilla: 1217990
-      retval: ^1$
-      message: Broken ipt_state module loading. bsc#1217990. Originally reported as bsc#1212839
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    mq_timedsend01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    sigtimedwait01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
     statvfs01:
     - product: opensuse:Tumbleweed
       retval: ^1$
