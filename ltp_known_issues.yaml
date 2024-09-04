@@ -1,4 +1,16 @@
 ---
+cve:
+    cve-2022-0185:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      bugzilla: 1230065
+      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
+
+kernel_misc:
+    tpci:
+    - skip: 1
+      message: Bug in test. Work in progress. poo#94786
+
 lvm.local:
     xfs_gf16:
     - product: opensuse:Tumbleweed
@@ -25,16 +37,74 @@ net.nfs:
       message: nfs_flock fails on NFSv3. Upstream bug, patches for kernel libtirpc and rpcbind sent.
       retval: ^1$
 
+net.rpc_tests:
+    rpc_clnt_broadcast:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_svc_destroy:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_svcfd_create:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_xprt_register:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+    rpc_xprt_unregister:
+    - product: opensuse:(Tumbleweed|15\.[56])
+      message: Unstable test. poo#38345
+
 syscalls:
     fanotify14:
     - product: opensuse:15\.[45]
       retval: ^1$
       message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
+    fsconfig03:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      bugzilla: 1230065
+      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
     ioctl01:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       retval: ^2$
       message: ioctl(TCGETS) with invalid address triggers process SEGFAULT. Glibc syscall wrapper issue. WONTFIX. bsc#1217134
+    recvmmsg01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    mq_timedreceive01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    mq_timedsend01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    sigtimedwait01:
+    - product: opensuse:Tumbleweed
+      ltp_version: ltp-32bit
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
+    - product: opensuse:Tumbleweed
+      arch: ^i586$
+      retval: ^2$
+      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
     statvfs01:
     - product: opensuse:Tumbleweed
       retval: ^1$
