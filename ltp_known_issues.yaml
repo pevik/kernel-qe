@@ -1,5 +1,11 @@
 ---
 cve:
+    cve-2018-13405:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      ltp_version: ltp-32bit
+      bugzilla: 1230280
+      message: Test file was not deleted between subtests (EEXIST) on bcachefs. Kernel bug. bsc#1230280
     cve-2022-0185:
     - product: opensuse:Tumbleweed
       retval: ^1$
@@ -55,6 +61,16 @@ net.rpc_tests:
       message: Unstable test. poo#38345
 
 syscalls:
+    creat09:
+    - product: opensuse:Tumbleweed
+      retval: ^2$
+      ltp_version: ltp-32bit
+      bugzilla: 1230280
+      message: Test file was not deleted between subtests (EEXIST) on bcachefs. Kernel bug. bsc#1230280
+    fanotify09:
+    - product: opensuse:15\.5
+      retval: ^1$
+      message: 'Test #6: The ignore mask did not survive. Missing kernel patch. WONTFIX. bsc#1230063'
     fanotify14:
     - product: opensuse:15\.[45]
       retval: ^1$
@@ -69,6 +85,12 @@ syscalls:
       arch: ppc64le$
       retval: ^2$
       message: ioctl(TCGETS) with invalid address triggers process SEGFAULT. Glibc syscall wrapper issue. WONTFIX. bsc#1217134
+    ioctl_loop06:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      retval: ^1$
+      bugzilla: 1230149
+      message: ioctl(LOOP_SET_BLOCK_SIZE) and ioctl(LOOP_CONFIGURE) accept blocksize larger than pagesize on PPC64LE. Kernel bug. bsc#1230149
     recvmmsg01:
     - product: opensuse:Tumbleweed
       ltp_version: ltp-32bit
