@@ -80,6 +80,11 @@ syscalls:
       retval: ^1$
       bugzilla: 1230065
       message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
+    getdents01:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      bugzilla: 1230922
+      message: getdents fails for dir and symlink entries on bcachefs. Kernel bug. bsc#1230922
     ioctl01:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
