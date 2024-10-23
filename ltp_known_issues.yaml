@@ -60,6 +60,13 @@ net.rpc_tests:
     - product: opensuse:(Tumbleweed|15\.[56])
       message: Unstable test. poo#38345
 
+numa:
+    move_pages04:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      kernel: 6\.11
+      message: expected to fail for kernels <6.12 [https://lore.kernel.org/ltp/20241008135934.2491333-2-david@redhat.com/]
+
 syscalls:
     creat09:
     - product: opensuse:Tumbleweed
