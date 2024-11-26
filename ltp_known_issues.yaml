@@ -92,53 +92,12 @@ syscalls:
       retval: ^1$
       bugzilla: 1230922
       message: getdents fails for dir and symlink entries on bcachefs. Kernel bug. bsc#1230922
-    ioctl01:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      retval: ^2$
-      message: ioctl(TCGETS) with invalid address triggers process SEGFAULT. Glibc syscall wrapper issue. WONTFIX. bsc#1217134
     ioctl_loop06:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
       retval: ^1$
       bugzilla: 1230149
       message: ioctl(LOOP_SET_BLOCK_SIZE) and ioctl(LOOP_CONFIGURE) accept blocksize larger than pagesize on PPC64LE. Kernel bug. bsc#1230149
-    recvmmsg01:
-    - product: opensuse:Tumbleweed
-      ltp_version: ltp-32bit
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    - product: opensuse:Tumbleweed
-      arch: ^i586$
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    mq_timedreceive01:
-    - product: opensuse:Tumbleweed
-      ltp_version: ltp-32bit
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    - product: opensuse:Tumbleweed
-      arch: ^i586$
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    mq_timedsend01:
-    - product: opensuse:Tumbleweed
-      ltp_version: ltp-32bit
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    - product: opensuse:Tumbleweed
-      arch: ^i586$
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    sigtimedwait01:
-    - product: opensuse:Tumbleweed
-      ltp_version: ltp-32bit
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
-    - product: opensuse:Tumbleweed
-      arch: ^i586$
-      retval: ^2$
-      message: glibc syscall wrapper function access the invalid pointer lead crash in 32-bit compatibility mode. WONTFIX bsc#1218087
     statvfs01:
     - product: opensuse:Tumbleweed
       retval: ^1$
