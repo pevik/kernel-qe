@@ -12,6 +12,12 @@ cve:
       bugzilla: 1230065
       message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
 
+ima:
+    ima_selinux:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Likely bug in test. Work in progress. poo#177396
+
 kernel_misc:
     tpci:
     - skip: 1
