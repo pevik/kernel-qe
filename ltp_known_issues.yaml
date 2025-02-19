@@ -1,4 +1,13 @@
 ---
+commands:
+    lsmod01_sh:
+    - product: opensuse:Tumbleweed
+      arch: s390x$
+      message: lsmod output difference from /proc/modules. Reported bsc#1237399
+      bugzilla: 1237399
+      retval: ^1$
+      keep_fail: 1
+
 cve:
     cve-2018-13405:
     - product: opensuse:Tumbleweed
