@@ -105,6 +105,26 @@ net.rpc_tests:
     rpc_xprt_unregister:
     - product: opensuse:(Tumbleweed|15\.[56])
       message: Unstable test. poo#38345
+    rpc_pmap_rmtcall:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#156595
+
+net.tirpc_tests:
+    tirpc_authdes_create:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#38345
+    tirpc_authdes_seccreate:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#38345
+    tirpc_rpc_broadcast:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#38345
+    tirpc_rpc_broadcast_exp:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#38345
+    tirpc_rpcb_rmtcall:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#156595
 
 numa:
     move_pages04:
