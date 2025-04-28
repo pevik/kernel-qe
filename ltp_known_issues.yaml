@@ -39,6 +39,18 @@ mm:
       retval: ^1$
       message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
 
+net.features:
+    sctp01:
+    - product: opensuse:Tumbleweed
+      arch: (ppc64le|s390x)$
+      retval: ^2$
+      message: Netstress timeout on ppc64le and s390x. Kernel bug. Fix in progress. bsc#1221728
+    sctp01_ipv6:
+    - product: opensuse:Tumbleweed
+      arch: (ppc64le|s390x)$
+      retval: ^2$
+      message: Netstress timeout on ppc64le and s390x. Kernel bug. Fix in progress. bsc#1221728
+
 net.nfs:
     nfs10_v30_ip4t:
     - product: opensuse:Tumbleweed
