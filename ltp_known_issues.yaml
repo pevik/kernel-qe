@@ -39,6 +39,16 @@ mm:
       retval: ^1$
       message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
 
+net_stress.appl:
+    ftp4-download-stress:
+    - product: opensuse:Tumbleweed
+      skip: 1
+      message: Test takes too long to run. poo#181586
+    ftp6-download-stress:
+    - product: opensuse:Tumbleweed
+      skip: 1
+      message: Test takes too long to run. poo#181586
+
 net.features:
     sctp01:
     - product: opensuse:Tumbleweed
@@ -188,3 +198,15 @@ syscalls:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
       message: ustat() is known to fail with EINVAL on Btrfs. Downstream fixes didn't make it to upstream and were removed. bsc#1194208
+
+tracing:
+    ftrace-stress-test:
+    - product: opensuse:Tumbleweed
+      skip: 1
+      message: Test often times out. Needs review and possibly splitting into separate test scripts. poo#129811
+
+controllers:
+    memcg_stress:
+    - product: opensuse:Tumbleweed
+      skip: 1
+      message: The test is hardcoded to run for 30+ minutes which is not worth the resource cost.
