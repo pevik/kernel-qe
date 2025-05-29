@@ -129,7 +129,7 @@ net.rpc_tests:
       message: Unstable test. poo#38345
     rpc_pmap_rmtcall:
     - product: opensuse:Tumbleweed
-      message: Unstable test. poo#156595
+      message: Test requires remote calls which are disabled by default in rpcbind package. poo#156595
 
 net.tirpc_tests:
     tirpc_authdes_create:
@@ -146,7 +146,7 @@ net.tirpc_tests:
       message: Unstable test. poo#38345
     tirpc_rpcb_rmtcall:
     - product: opensuse:Tumbleweed
-      message: Unstable test. poo#156595
+      message: Test requires remote calls which are disabled by default in rpcbind package. poo#156595
 
 numa:
     move_pages04:
