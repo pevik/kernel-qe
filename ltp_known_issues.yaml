@@ -210,3 +210,17 @@ controllers:
     - product: opensuse:Tumbleweed
       skip: 1
       message: The test is hardcoded to run for 30+ minutes which is not worth the resource cost.
+
+openposix:
+    pthread_rwlock_rdlock_2-1:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Linux prefer readers by default while POSIX demands writers preference poo#181586
+    pthread_rwlock_rdlock_2-2:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Linux prefer readers by default while POSIX demands writers preference poo#181586
+    pthread_rwlock_unlock_3-1:
+    - product: opensuse:Tumbleweed
+      retval: ^1$
+      message: Linux prefer readers by default while POSIX demands writers preference poo#181586
