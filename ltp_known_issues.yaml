@@ -210,6 +210,11 @@ controllers:
     - product: opensuse:Tumbleweed
       skip: 1
       message: The test is hardcoded to run for 30+ minutes which is not worth the resource cost.
+    memcontrol04:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le
+      retval: ^1$
+      message: cgroup memory.min protection is unreliable. bsc#1226440
 
 openposix:
     pthread_rwlock_rdlock_2-1:
