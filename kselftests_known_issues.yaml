@@ -1,5 +1,6 @@
 ---
 bpf:
+    # test_xsk.sh
     SKB_XDP_METADATA_COPY:
     - product: opensuse:Tumbleweed
       message: Regression from new tail test. poo#188070
@@ -18,3 +19,11 @@ bpf:
     DRV_XDP_ADJUST_TAIL_GROW:
     - product: opensuse:Tumbleweed
       message: New test. poo#188070
+
+    # test_progs
+    test_tcp_ca_kfunc/tcp_ca_kfunc__open_and_load:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188076
+    bpf_tcp_ca/tcp_ca_kfunc:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188076
