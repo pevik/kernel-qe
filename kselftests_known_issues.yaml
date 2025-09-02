@@ -52,3 +52,10 @@ bpf:
     test_lsm:
     - product: opensuse:Tumbleweed
       message: SELinux makes mprotect() return EACCES. poo#188139
+
+    fs_kfuncs/security_selinux_xattr_error:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
+    fs_kfuncs:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
