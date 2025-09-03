@@ -59,3 +59,40 @@ bpf:
     fs_kfuncs:
     - product: opensuse:Tumbleweed
       message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
+
+    tunnel/vxlan_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ip6vxlan_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ipip_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/xfrm_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/gre_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ip6gre_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/erspan_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ip6erspan_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/geneve_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ip6geneve_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel/ip6tnl_tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
+    tunnel:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188196
