@@ -100,3 +100,10 @@ bpf:
     test_ima:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188244
+
+    kprobe_multi_test/attach_override:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188247
+    kprobe_multi_test:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188247
