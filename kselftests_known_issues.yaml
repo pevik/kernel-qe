@@ -96,3 +96,7 @@ bpf:
     tunnel:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188196
+
+    test_ima:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188244
