@@ -107,3 +107,10 @@ bpf:
     kprobe_multi_test:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188247
+
+    libbpf_probe_prog_types/BPF_PROG_TYPE_LIRC_MODE2:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188253
+    libbpf_probe_prog_types:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188253
