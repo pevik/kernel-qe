@@ -114,3 +114,28 @@ bpf:
     libbpf_probe_prog_types:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188253
+
+    token/obj_priv_map:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_prog:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_freplace_prog:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_freplace_prog_fail:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_btf_success:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_implicit_token:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token/obj_priv_implicit_token_envvar:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
+    token:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188313
