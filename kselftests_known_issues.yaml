@@ -139,3 +139,7 @@ bpf:
     token:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188313
+
+    verif_scale_pyperf600:
+    - product: opensuse:Tumbleweed
+      message: Program fails verification in LLVM 20. poo#188379
