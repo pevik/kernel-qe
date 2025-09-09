@@ -143,3 +143,7 @@ bpf:
     verif_scale_pyperf600:
     - product: opensuse:Tumbleweed
       message: Program fails verification in LLVM 20. poo#188379
+
+    test_bpffs:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188403
