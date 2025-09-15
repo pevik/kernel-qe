@@ -216,3 +216,7 @@ bpf:
     perf_branches:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188766
+
+    verifier_private_stack:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. poo#188769
