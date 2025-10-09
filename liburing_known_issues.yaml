@@ -1,4 +1,13 @@
 ---
 
 liburing:
-  # add here tests to skip and known issues
+  send-zerocopy.t:
+    - product: opensuse:Tumbleweed$
+      arch: ppc64le$
+      skip: 1
+      message: Times out on POWER (64 KiB pages) due to oversized payloads.
+  vec-regbuf.t:
+    - product: opensuse:Tumbleweed$
+      arch: ppc64le$
+      skip: 1
+      message: Times out on POWER with large registered vectors.
