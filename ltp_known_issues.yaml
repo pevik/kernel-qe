@@ -1,17 +1,4 @@
 ---
-cve:
-    cve-2018-13405:
-    - product: opensuse:Tumbleweed
-      retval: ^2$
-      ltp_version: ltp-32bit
-      bugzilla: 1230280
-      message: Test file was not deleted between subtests (EEXIST) on bcachefs. Kernel bug. bsc#1230280
-    cve-2022-0185:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      bugzilla: 1230065
-      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
-
 ima:
     ima_conditionals:
     - product: opensuse:Tumbleweed
@@ -156,12 +143,6 @@ numa:
       message: expected to fail for kernels <6.12 [https://lore.kernel.org/ltp/20241008135934.2491333-2-david@redhat.com/]
 
 syscalls:
-    creat09:
-    - product: opensuse:Tumbleweed
-      retval: ^2$
-      ltp_version: ltp-32bit
-      bugzilla: 1230280
-      message: Test file was not deleted between subtests (EEXIST) on bcachefs. Kernel bug. bsc#1230280
     epoll_wait02:
     - product: opensuse:Tumbleweed
       arch: ^(aarch64|riscv64)$
@@ -178,16 +159,6 @@ syscalls:
     - product: opensuse:15\.[45]
       retval: ^1$
       message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
-    fsconfig03:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      bugzilla: 1230065
-      message: Invalid fsconfig() call passes on bcachefs. Kernel bug. bsc#1230065
-    getdents01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      bugzilla: 1230922
-      message: getdents fails for dir and symlink entries on bcachefs. Kernel bug. bsc#1230922
     ioctl_loop06:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
@@ -198,10 +169,6 @@ syscalls:
     - product: opensuse:Tumbleweed
       arch: riscv64$
       message: Test reported to be too resource hungry for riscv64 software emulation. Maybe related to bsc#1236868
-    statvfs01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Bcachefs fails with ENAMETOOLONG in mainline kernel. https://lore.kernel.org/ltp/20231116135546.2599273-1-pvorel@suse.cz/
     ustat01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
