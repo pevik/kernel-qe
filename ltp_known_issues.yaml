@@ -10,12 +10,6 @@ kernel_misc:
     - skip: 1
       message: Bug in test. Work in progress. poo#94786
 
-mm:
-    swapping01:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Sporadic slowler swap performance. Reported. poo#138947 bsc#1217850
-
 net_stress.appl:
     ftp4-download-stress:
     - product: opensuse:Tumbleweed
