@@ -10,16 +10,6 @@ kernel_misc:
     - skip: 1
       message: Bug in test. Work in progress. poo#94786
 
-lvm.local:
-    xfs_gf16:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
-    xfs_gf17:
-    - product: opensuse:Tumbleweed
-      retval: ^1$
-      message: Short writes when the FS is 2/3 full. Minor kernel bug. bsc#1172231
-
 mm:
     swapping01:
     - product: opensuse:Tumbleweed
