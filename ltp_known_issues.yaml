@@ -128,14 +128,6 @@ syscalls:
     - product: opensuse:Tumbleweed
       arch: ^(aarch64|riscv64)$
       message: epoll_pwait() oversleeps by a random amount. bsc#1236868
-    fanotify09:
-    - product: opensuse:15\.5
-      retval: ^1$
-      message: 'Test #6: The ignore mask did not survive. Missing kernel patch. WONTFIX. bsc#1230063'
-    fanotify14:
-    - product: opensuse:15\.[45]
-      retval: ^1$
-      message: WONTFIX on older than kernel 6.4 ("fanotify disallow mount/sb marks on kernel internal pseudo fs") bsc#1213486
     ioctl_loop06:
     - product: opensuse:Tumbleweed
       arch: ppc64le$
