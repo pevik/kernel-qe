@@ -128,12 +128,6 @@ syscalls:
     - product: opensuse:Tumbleweed
       arch: ^(aarch64|riscv64)$
       message: epoll_pwait() oversleeps by a random amount. bsc#1236868
-    ioctl_loop06:
-    - product: opensuse:Tumbleweed
-      arch: ppc64le$
-      retval: ^1$
-      bugzilla: 1230149
-      message: ioctl(LOOP_SET_BLOCK_SIZE) and ioctl(LOOP_CONFIGURE) accept blocksize larger than pagesize on PPC64LE. Kernel bug. bsc#1230149
     prctl09:
     - product: opensuse:Tumbleweed
       arch: riscv64$
