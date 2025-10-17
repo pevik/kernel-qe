@@ -132,6 +132,26 @@ syscalls:
     - product: opensuse:Tumbleweed
       arch: riscv64$
       message: Test reported to be too resource hungry for riscv64 software emulation. Maybe related to bsc#1236868
+    swapoff01:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: upstream kernel bug in fuse based swap. bsc#1250677
+    swapoff02:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: upstream kernel bug in fuse based swap. bsc#1250677
+    swapon01:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: upstream kernel bug in fuse based swap. bsc#1250677
+    swapon02:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: upstream kernel bug in fuse based swap. bsc#1250677
+    swapon03:
+    - product: opensuse:Tumbleweed
+      arch: ppc64le$
+      message: upstream kernel bug in fuse based swap. bsc#1250677
     ustat01:
     - product: opensuse:(Tumbleweed|15\.[4-6])
       retval: ^1$
