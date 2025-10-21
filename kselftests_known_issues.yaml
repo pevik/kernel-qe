@@ -128,10 +128,6 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_BPF_UNPRIV_DEFAULT_OFF=n. poo#188313
 
-    verif_scale_pyperf600:
-    - product: opensuse:Tumbleweed
-      message: Program fails verification in LLVM 20. poo#188379
-
     test_bpffs:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_BPF_PRELOAD=y. poo#188403
@@ -169,13 +165,6 @@ bpf:
     xdp_cpumap_attach:
     - product: opensuse:Tumbleweed
       message: Unstable test. poo#188406
-
-    bpf_iter/task_vma:
-    - product: opensuse:Tumbleweed
-      message: Virt. overlay makes inode number unreliable. poo#188382
-    bpf_iter:
-    - product: opensuse:Tumbleweed
-      message: Virt. overlay makes inode number unreliable. poo#188382
 
     xdp_flowtable:
     - product: opensuse:Tumbleweed
@@ -239,3 +228,15 @@ bpf:
     xdp_bonding:
     - product: opensuse:Tumbleweed
       message: Unstable test. poo#189192
+
+    verif_scale_pyperf600:
+    - product: opensuse:Tumbleweed
+      message: Program fails to load (too many jumps). bsc#1252367
+
+    bpf_iter/task_vma:
+    - product: opensuse:Tumbleweed
+      message: VMA comparison failure. bsc#1252361
+    bpf_iter:
+    - product: opensuse:Tumbleweed
+      message: VMA comparison failure. bsc#1252361
+
