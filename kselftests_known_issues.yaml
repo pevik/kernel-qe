@@ -209,7 +209,31 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. poo#188769
 
+    xdp_bonding/xdp_bonding_attach:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_nested:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_features:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
     xdp_bonding/xdp_bonding_roundrobin:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_activebackup:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_xor_layer2:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_xor_layer23:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_xor_layer34:
+    - product: opensuse:Tumbleweed
+      message: Unstable test. poo#189192
+    xdp_bonding/xdp_bonding_redirect_multi:
     - product: opensuse:Tumbleweed
       message: Unstable test. poo#189192
     xdp_bonding:
