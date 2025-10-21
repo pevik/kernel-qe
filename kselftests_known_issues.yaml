@@ -13,40 +13,17 @@ bpf:
 
     # test_progs
 
+    prog_tests_framework/test_fail_subtest:
+    - product: opensuse:Tumbleweed
+      message: This test is supposed to fail.
+      skip: 1
+
     bpf_tcp_ca/tcp_ca_kfunc:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_TCP_CONG_BBR=y. poo#188076
     bpf_tcp_ca:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_TCP_CONG_BBR=y. poo#188076
-
-    bpf_cookie/lsm:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-    bpf_cookie:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-
-    iters/css_task:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-    iters:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-
-    test_lsm/lsm_basic:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-    test_lsm:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes mprotect() return EACCES. poo#188139
-
-    fs_kfuncs/security_selinux_xattr_error:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
-    fs_kfuncs:
-    - product: opensuse:Tumbleweed
-      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
 
     tunnel/vxlan_tunnel:
     - product: opensuse:Tumbleweed
@@ -132,14 +109,59 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_BPF_PRELOAD=y. poo#188403
 
-    prog_tests_framework/test_fail_subtest:
-    - product: opensuse:Tumbleweed
-      message: This test is supposed to fail.
-      skip: 1
-
     btf_dump:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_DEBUG_FORCE_WEAK_PER_CPU=n. poo#188388
+
+    xdp_flowtable:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_NF_FLOW_TABLE=y. poo#188409
+
+    htab_update/reenter_update:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_FORTIFY_SOURCE=n. poo#188394
+    htab_update:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_FORTIFY_SOURCE=n. poo#188394
+
+    perf_branches/perf_branches_no_hw:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188766
+    perf_branches:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188766
+
+    verifier_private_stack:
+    - product: opensuse:Tumbleweed
+      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188769
+
+    bpf_cookie/lsm:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+    bpf_cookie:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+
+    iters/css_task:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+    iters:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+
+    test_lsm/lsm_basic:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+    test_lsm:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes mprotect() return EACCES. poo#188139
+
+    fs_kfuncs/security_selinux_xattr_error:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
+    fs_kfuncs:
+    - product: opensuse:Tumbleweed
+      message: SELinux makes setxattr(f, "security.selinux", ...) return EINVAL. poo#188139
 
     ns_bpf_qdisc:
     - product: opensuse:Tumbleweed
@@ -162,14 +184,6 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Virtualized SUT has a single vCPU, test requires 2. poo#188391
 
-    xdp_cpumap_attach:
-    - product: opensuse:Tumbleweed
-      message: Unstable test. poo#188406
-
-    xdp_flowtable:
-    - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_NF_FLOW_TABLE=y. poo#188409
-
     verify_pkcs7_sig/pkcs7_sig_from_map:
     - product: opensuse:Tumbleweed
       message: Likely environment setup issue. poo#188751
@@ -180,23 +194,9 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Likely environment setup issue. poo#188751
 
-    htab_update/reenter_update:
+    xdp_cpumap_attach:
     - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_FORTIFY_SOURCE=n. poo#188394
-    htab_update:
-    - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_FORTIFY_SOURCE=n. poo#188394
-
-    perf_branches/perf_branches_no_hw:
-    - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188766
-    perf_branches:
-    - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188766
-
-    verifier_private_stack:
-    - product: opensuse:Tumbleweed
-      message: Configuration mismatch. Test requires CONFIG_RANDOM_KMALLOC_CACHES=n. poo#188769
+      message: Unstable test. poo#188406
 
     xdp_bonding/xdp_bonding_attach:
     - product: opensuse:Tumbleweed
@@ -239,4 +239,3 @@ bpf:
     bpf_iter:
     - product: opensuse:Tumbleweed
       message: VMA comparison failure. bsc#1252361
-
