@@ -184,16 +184,6 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Virtualized SUT has a single vCPU, test requires 2. poo#188391
 
-    verify_pkcs7_sig/pkcs7_sig_from_map:
-    - product: opensuse:Tumbleweed
-      message: Likely environment setup issue. poo#188751
-    verify_pkcs7_sig/pkcs7_sig_fsverity:
-    - product: opensuse:Tumbleweed
-      message: Likely environment setup issue. poo#188751
-    verify_pkcs7_sig:
-    - product: opensuse:Tumbleweed
-      message: Likely environment setup issue. poo#188751
-
     xdp_cpumap_attach:
     - product: opensuse:Tumbleweed
       message: Unstable test. poo#188406
@@ -239,3 +229,32 @@ bpf:
     bpf_iter:
     - product: opensuse:Tumbleweed
       message: VMA comparison failure. bsc#1252361
+
+    verify_pkcs7_sig/pkcs7_sig_from_map:
+    - product: opensuse:Tumbleweed
+      message: Likely environment setup issue. poo#188751
+    verify_pkcs7_sig/pkcs7_sig_fsverity:
+    - product: opensuse:Tumbleweed
+      message: Likely environment setup issue. poo#188751
+    verify_pkcs7_sig:
+    - product: opensuse:Tumbleweed
+      message: Likely environment setup issue. poo#188751
+
+    wq/test_call_array_sleepable:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
+    wq/test_call_hash_sleepable:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
+    wq/test_call_hash_malloc_sleepable:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
+    wq/test_call_lru_sleepable:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
+    wq/test_syscall_array_sleepable:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
+    wq:
+    - product: opensuse:Tumbleweed
+      message: Test fail in -cpuv4 and -no_alu32 flavors due to bpf_testmod.ko being unloaded by previous failing test. bsc#1252502
