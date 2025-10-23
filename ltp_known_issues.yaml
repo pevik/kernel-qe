@@ -115,9 +115,6 @@ net.tirpc_tests:
     tirpc_rpc_broadcast_exp:
     - product: opensuse:Tumbleweed
       message: Unstable test. poo#38345
-    tirpc_rpcb_rmtcall:
-    - product: opensuse:Tumbleweed
-      message: Test requires remote calls which are disabled by default in rpcbind package. poo#156595
 
 syscalls:
     epoll_wait02:
