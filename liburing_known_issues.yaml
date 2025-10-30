@@ -14,4 +14,4 @@ liburing:
   poll-race-mshot.t:
     - product: opensuse:Tumbleweed$
       skip: 1
-      message: Change in the kernel behaviour. Test adapted but in the latest version only; poo#190338
+      message: Change in the kernel behaviour. Test adapted but in the latest version only.
