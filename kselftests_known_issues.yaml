@@ -4,10 +4,6 @@ bpf:
     - product: opensuse:Tumbleweed
       message: Configuration mismatch. Test requires CONFIG_BPF_LIRC_MODE2=y
 
-    test_xdp_features_sh:
-    - product: opensuse:Tumbleweed
-      message: Test passes locally but fails in openQA, therefore there is a missing setting in the SUT.
-
     # test_xsk.sh
     SKB_XDP_ADJUST_TAIL_GROW:
     - product: opensuse:Tumbleweed
